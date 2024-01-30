@@ -1,0 +1,23 @@
+logging:
+  level:
+    root: INFO
+
+server:
+  port: 8082
+
+spring:
+  cloud:
+    azure:
+      credential:
+        client-id: 6c5b4332-4436-4e8d-836c-a4cff69ab350
+        client-secret: MqC8Q~eEr2nQ0pmlP18dw15A6y0kWwPNB3AqLcc4
+      profile:
+        tenant-id: fd915793-26c2-4b3d-9eeb-2747e00ef897
+  jms:
+    servicebus:
+      # connection-string: Endpoint=sb://demo-cristiano.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=hcrdkWhOfcp0z3inOL5KsCQ4+dCW8Eg0j+ASbIPEvck=
+      topic-client-id: 0553c693-0315-4eef-bf29-6429616a63e7
+      pricing-tier: standard
+      namespace: demo-cristiano
+      passwordless-enabled: true
+      receive-timeout: 60000
